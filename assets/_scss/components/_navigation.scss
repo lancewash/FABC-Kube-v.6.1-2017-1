@@ -21,10 +21,39 @@
   display: block;
 }
 .cd-auto-hide-header.is-hidden {
-  -webkit-transform: translateY(-270%);
-  -ms-transform: translateY(-270%);
-  transform: translateY(-270%);
+  -webkit-transform: translateY(-298%);
+  -ms-transform: translateY(-298%);
+  transform: translateY(-298%);
 }
+.cd-auto-hide-header .fabc-logo {
+  background: url("../img/fabc-logo.png") no-repeat;
+  float: left;
+  height: 257px;
+  left: 25px;
+  position: relative;
+  top: 15px;
+  width: 211px;
+  transition: all .5s ease-in-out;
+}
+.cd-auto-hide-header .logo-small .fabc-logo {
+  background: url("../img/fabc-logo-small.png") no-repeat;
+  border-left: 1px solid rgba(255,255,255,.1);
+  border-right: 1px solid rgba(255,255,255,.1);
+  height: 80px;
+  left: 0;
+  margin: -15px 0 0 1px;
+  width: 260px;
+  //transition: all .5s ease-in-out;
+}
+
+
+.cd-auto-hide-header.is-hidden .fabc-logo {
+  background: url("../img/fabc-logo-small.png") no-repeat;
+  height: 42px;
+  width: 175px;
+  //transition: all .5s ease-in-out;
+}
+
 @media only screen and (min-width: 1024px) {
   .cd-auto-hide-header {
     height: 40px;
@@ -50,9 +79,10 @@
 
 .cd-auto-hide-header .nav-trigger {
   /* vertically align its content */
-  display: table;
+  //display: table;
+  display: block;
   height: 100%;
-  padding: 0 1em;
+  padding: 13px 20px;
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #25283D;
@@ -148,7 +178,7 @@
 .cd-primary-nav > ul {
   position: absolute;
   z-index: 2;
-  top: 60px;
+  top: 40px;
   left: 0;
   width: 100%;
   background-color: #ffffff;
@@ -233,7 +263,7 @@
   clear: both;
   width: 100%;
   height: 50px;
-  background-color: #25283D;
+  background-color: #390C06;
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -243,8 +273,8 @@
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
 }
-.cd-secondary-nav::after {
-  /* gradient on the right - to indicate it's possible to scroll */
+/*.cd-secondary-nav::after {
+  !* gradient on the right - to indicate it's possible to scroll *!
   content: '';
   position: absolute;
   z-index: 1;
@@ -258,7 +288,7 @@
   pointer-events: none;
   -webkit-transition: opacity .2s;
   transition: opacity .2s;
-}
+}*/
 .cd-secondary-nav.nav-end::after {
   opacity: 0;
 }
@@ -294,17 +324,22 @@
 .cd-secondary-nav a {
   display: block;
   color: #ffffff;
-  opacity: .6;
   line-height: 50px;
   padding: 0 2rem;
+}
+.cd-secondary-nav .fabc-logo a {
+  color: transparent;
+  padding: 0;
 }
 .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
   opacity: 1;
 }
 @media only screen and (min-width: 1024px) {
   .cd-secondary-nav {
-    height: 70px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    height: 80px;
     overflow: visible;
+    position: relative;
   }
   .cd-secondary-nav ul {
     /* reset mobile style */
@@ -322,7 +357,7 @@
     flex-shrink: 1;
   }
   .cd-secondary-nav a {
-    line-height: 70px;
+    line-height: 78px;
   }
   .cd-secondary-nav a.active {
     box-shadow: inset 0 -3px #8F3985;
@@ -361,19 +396,19 @@
 Main content
 
 -------------------------------- */
-.cd-main-content {
+.main-content {
   //padding: 60px 5% 2em;
   overflow: hidden;
 }
-.cd-main-content.sub-nav {
-  /* to be used if there is sub nav */
-  padding-top: 110px;
-}
-.cd-main-content.sub-nav-hero {
+//.main-content.sub-nav {
+//  /* to be used if there is sub nav */
+//  padding-top: 120px;
+//}
+.main-content.sub-nav-hero {
   /* to be used if there is hero image + subnav */
   padding-top: 0;
 }
-.cd-main-content.sub-nav-hero.secondary-nav-fixed {
+.main-content.sub-nav-hero.secondary-nav-fixed {
   margin-top: 50px;
 }
 //.cd-main-content p {
@@ -384,13 +419,13 @@ Main content
 //  color: #a5a8a9;
 //}
 @media only screen and (min-width: 1024px) {
-  .cd-main-content {
-    padding-top: 80px;
-  }
-  .cd-main-content.sub-nav {
-    padding-top: 110px;
-  }
-  .cd-main-content.sub-nav-hero.secondary-nav-fixed {
+  //.main-content {
+  //  padding-top: 80px;
+  //}
+  //.main-content.sub-nav {
+  //  padding-top: 110px;
+  //}
+  .main-content.sub-nav-hero.secondary-nav-fixed {
     margin-top: 70px;
   }
   //.cd-main-content p {
@@ -402,8 +437,8 @@ Main content
 	adjust the positioning of in-page links
 	http://nicolasgallagher.com/jump-links-and-viewport-positioning/
 */
-.cd-main-content.sub-nav :target::before,
-.cd-main-content.sub-nav-hero :target::before {
+.main-content.sub-nav :target::before,
+.main-content.sub-nav-hero :target::before {
   display: block;
   content: "";
   margin-top: -50px;

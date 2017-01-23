@@ -18,14 +18,14 @@
             <div class="nav-wrap nav-wrap-primary">
                 <div class="fabc">
                     <!--<a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>-->
-                    <p style="display: inline-block;float: left;font-size: .8rem;padding: .5rem 0 0 2rem; margin: 0">First
+                    <p style="display: inline-block;float: left;font-size: .8rem;padding: .5rem 0 0 0; margin: 0">First
                         African Baptist Church | Darby Township, Pennsylvania</p>
                 </div>
                 <nav class="cd-primary-nav">
                     <a href="#cd-navigation" class="nav-trigger">
 			<span>
 				<em aria-hidden="true"></em>
-				Menu
+                <!--Menu-->
 			</span>
                     </a> <!-- .nav-trigger -->
 
@@ -40,7 +40,13 @@
                 </nav> <!-- .cd-primary-nav -->
             </div>
             <nav class="cd-secondary-nav">
+
                 <div class="nav-wrap nav-wrap-secondary">
+                    <div class="fabc-logo">
+                        <a href="">
+                            <!--<img src="assets/img/fabc-logo.png" alt="">-->
+                        </a>
+                    </div>
                     <ul>
                         <li><a href="sub-page-full.html">Leadership</a></li>
                         <li><a href="sub-page-left-sidebar.html">Ministries</a></li>
@@ -50,14 +56,46 @@
                 </div>
             </nav> <!-- .cd-secondary-nav -->
         </header> <!-- .cd-auto-hide-header -->
-        <main class="cd-main-content sub-nav">
+        <section class="banner-wrap">
+            <div id="head-banner">
+                <div class="banner">
+                    <!--<img src="assets/img/fabc-banner-4.jpg" alt="">-->
+                </div>
+            </div>
+        </section>
+        <section class="welcome intro text-center">
+            <!--Welcome-->
+            <h1 id="welcome-head">Welcome<br>
+                <span id="welcome-sub">to First African Baptist Church Of Darby Township Pennsylvania</span>
+            </h1>
+        </section>
+        <section>
+            <div class="row centered ">
+                <div class="eleven column" style="margin-bottom: 100px;">
+                    <div class="sixteen text-center">
+                        <img id="pastor-img" src="assets/img/pastor-mrs-dent.png" alt="">
+                    </div>
+                    <div class="sixteen text-center" style="font-size: 1.25rem; line-height: 1.5;">
+                    <p>I am very pleased that you decided to visit the website of First African Baptist Church of
+                        Sharon Hill, PA. First African is a family-oriented church for all of the Lord’s children regardless of
+                        race, color, creed, or circumstance. If you have never experienced the JOY! of First African, I
+                        sincerely ask you to join us for Sunday morning worship service. If you have visited previously
+                        and are looking for a church home, please accept an invitation to become part of our Christian
+                        fellowship on Sunday morning. <br>
+                        <span>May God bless and keep you.</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="main-content sub-nav">
             <div class="row">
                 <div class="column four img-bg">
-                    <!--<h2>Header Number Two</h2>
+                    <h2>Service Times</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                         galley.
-                    </p>-->
+                    </p>
                 </div>
                 <div class="column six">
                     <h2>Header Number Two</h2>
@@ -140,5 +178,19 @@
 </script>
 <script src="assets/js/nav.js"></script> <!-- Resource jQuery -->
 <script src="assets/js/kube.js"></script>
+<script>
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll >= 200) {
+            //console.log('a');
+            $(".cd-secondary-nav").addClass("logo-small");
+        } else {
+            //console.log('a');
+            $(".cd-secondary-nav").removeClass("logo-small");
+        }
+    });
+</script>
 </body>
 </html>

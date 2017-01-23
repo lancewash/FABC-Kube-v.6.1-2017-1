@@ -1,0 +1,22 @@
+
+
+
+.banner-wrap {
+  background: url("../img/fabc-banner-4.jpg");
+  background-size: cover;
+  height: calc( 75vh - 110px );
+  margin-top: 110px;
+}
+
+.welcome {
+  height: 25vh;
+
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.intro {
+  padding-top: 3.5rem;
+}
