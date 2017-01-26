@@ -54,7 +54,24 @@
   //transition: all .5s ease-in-out;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+
+  .cd-auto-hide-header .cd-secondary-nav {
+    height: 80px;
+  }
+
+  .cd-auto-hide-header .fabc-logo {
+    background: url("../img/fabc-logo-small.png") no-repeat;
+    border-left: 1px solid rgba(255,255,255,.1);
+    border-right: 1px solid rgba(255,255,255,.1);
+    height: 80px;
+    left: 0;
+    margin: -15px 0 0 1px;
+    width: 260px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .cd-auto-hide-header {
     height: 40px;
   }
@@ -132,7 +149,7 @@
   -ms-transform: translateY(6px);
   transform: translateY(6px);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .cd-auto-hide-header .nav-trigger {
     display: none;
   }
@@ -198,7 +215,7 @@
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   color: #8F3985;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .cd-primary-nav {
     /* vertically align its content */
     display: table;
@@ -245,7 +262,7 @@
   */
   display: block;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .nav-open .cd-primary-nav ul,
   .cd-primary-nav ul:target {
     display: table-cell;
@@ -334,7 +351,7 @@
 .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
   opacity: 1;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .cd-secondary-nav {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
     height: 80px;

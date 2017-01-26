@@ -150,6 +150,10 @@
 	max-width: 100%;
 	padding: 4rem 5rem;
 	//padding-left: 2.12766%;
+
+	&.no-pad {
+		padding: 0;
+	}
 }
 
 .column.first {
@@ -237,7 +241,7 @@
 	-ms-flex-preferred-size: 56.25%;
 	flex-basis: 56.25%;
 	max-width: 56.25%;
-	width: 56.25%; }62.5
+	width: 56.25%; }
 
 .ten {
 	-webkit-flex-basis: 62.5%;

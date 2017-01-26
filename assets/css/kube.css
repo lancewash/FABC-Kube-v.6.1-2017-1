@@ -758,6 +758,8 @@ sub {
   flex-basis: 0;
   max-width: 100%;
   padding: 4rem 5rem; }
+  .column.no-pad {
+    padding: 0; }
 
 .column.first {
   -webkit-order: -1;
@@ -845,7 +847,6 @@ sub {
   max-width: 56.25%;
   width: 56.25%; }
 
-62.5
 .ten {
   -webkit-flex-basis: 62.5%;
   -ms-flex-preferred-size: 62.5%;
@@ -2361,7 +2362,19 @@ button:hover .menu-icon {
   height: 42px;
   width: 175px; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+  .cd-auto-hide-header .cd-secondary-nav {
+    height: 80px; }
+  .cd-auto-hide-header .fabc-logo {
+    background: url("../img/fabc-logo-small.png") no-repeat;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    height: 80px;
+    left: 0;
+    margin: -15px 0 0 1px;
+    width: 260px; } }
+
+@media only screen and (min-width: 1200px) {
   .cd-auto-hide-header {
     height: 40px; } }
 
@@ -2434,7 +2447,7 @@ button:hover .menu-icon {
   -ms-transform: translateY(6px);
   transform: translateY(6px); }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .cd-auto-hide-header .nav-trigger {
     display: none; } }
 
@@ -2490,7 +2503,7 @@ button:hover .menu-icon {
 .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
   color: #8F3985; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .cd-primary-nav {
     /* vertically align its content */
     display: table; }
@@ -2529,7 +2542,7 @@ button:hover .menu-icon {
   */
   display: block; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .nav-open .cd-primary-nav ul,
   .cd-primary-nav ul:target {
     display: table-cell; } }
@@ -2612,7 +2625,7 @@ button:hover .menu-icon {
 .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
   opacity: 1; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .cd-secondary-nav {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
     height: 80px;
