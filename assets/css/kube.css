@@ -1,3 +1,6 @@
+html {
+  background: url("../../assets/img/body-bg.png") repeat; }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -418,11 +421,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 24px;
   font-size: 16px;
-  color: #333;
-  background-color: #fff; }
+  color: #333; }
 
 a {
-  color: #255bbd; }
+  color: #255bbd;
+  text-decoration: none; }
 
 a:hover {
   color: #f34248; }
@@ -684,9 +687,6 @@ sub {
 
 ********* Breakpoints *********
 *******************************/
-.page-wrap {
-  background: #efefef; }
-
 .container {
   background: #fff;
   max-width: 100rem;
@@ -2376,7 +2376,10 @@ button:hover .menu-icon {
 
 @media only screen and (min-width: 1200px) {
   .cd-auto-hide-header {
-    height: 40px; } }
+    height: 40px;
+    left: auto;
+    right: auto;
+    max-width: 100rem; } }
 
 .cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
@@ -2473,7 +2476,8 @@ button:hover .menu-icon {
   max-width: 100rem; }
 
 .nav-wrap-primary {
-  height: 40px; }
+  height: 40px;
+  padding-left: 1.5rem; }
 
 .cd-primary-nav {
   display: inline-block;

@@ -74,6 +74,9 @@
 @media only screen and (min-width: 1200px) {
   .cd-auto-hide-header {
     height: 40px;
+    left: auto;
+    right: auto;
+    max-width: 100rem;
   }
 }
 
@@ -180,6 +183,7 @@
 
 .nav-wrap-primary {
   height: 40px;
+  padding-left: 1.5rem;
 }
 
 .nav-wrap-secondary {
