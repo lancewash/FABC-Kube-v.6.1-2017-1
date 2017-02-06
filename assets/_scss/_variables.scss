@@ -4,8 +4,8 @@ $breakpoint-medium: 1024px !default;
 $breakpoint-large: 1200px !default;
 
 // FontFamily
-$font-family: 'Helvetica Neue', Helvetica, sans-serif !default;
-$heading-font-family: $font-family !default;
+$font-family: 'proxima_nova_ltlight', 'Helvetica Neue', Helvetica, sans-serif !default;
+$heading-font-family: 'playfair_displaybold';
 $monospace-font-family: Consolas, Monaco, "Courier New", monospace !default;
 
 // Baseline
@@ -62,11 +62,11 @@ $heading-margin-bottom: 12px !default;
 $paragraph-margin-bottom: 16px !default;
 
 // Color
-$body-text-color: #333 !default;
-$heading-text-color: #000 !default;
+$body-text-color: #555 !default;
+$heading-text-color: #004462 !default;
 $samp-text-color: #fff !default;
-$input-text-color: #333 !default;
-$input-append-text-color: #555 !default;
+$input-text-color: #555 !default;
+$input-append-text-color: #777 !default;
 
 // Color States
 $color-default: #f4f4f4 !default;
