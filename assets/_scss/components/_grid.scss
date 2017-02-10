@@ -79,6 +79,7 @@
 
 .container {
 	background: #fff;
+	box-sizing: border-box;
 	max-width: 100rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -139,6 +140,7 @@
 	padding-left: 0; }
 
 .column {
+	box-sizing: border-box;
 	-ms-flex-grow: 1;
 	-webkit-flex-grow: 1;
 	-ms-flex-positive: 1;

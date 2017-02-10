@@ -368,60 +368,85 @@ html {
   -webkit-animation-name: rotate;
   animation-name: rotate; }
 
-html {
-  box-sizing: border-box; }
+/*
+=======================================================================
+================================ Fonts ================================
+=======================================================================
+*/
+@font-face {
+  font-family: 'playfair_displaybold';
+  src: url("fonts/playfairdisplay-bold-webfont.woff2") format("woff2"), url("fonts/playfairdisplay-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url("fonts/playfairdisplay-regular-webfont.woff2") format("woff2"), url("fonts/playfairdisplay-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("fonts/proximanova-bold-webfont.woff2") format("woff2"), url("fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-a:active,
-a:hover {
-  outline: 0; }
+@font-face {
+  font-family: 'proxima_novaextrabold';
+  src: url("fonts/proxima_nova-extrabold-webfont.woff2") format("woff2"), url("fonts/proxima_nova-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url("fonts/proximanova-light-webfont.woff2") format("woff2"), url("fonts/proximanova-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-img,
-video,
-audio {
-  max-width: 100%; }
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("fonts/proximanova-reg-webfont.woff2") format("woff2"), url("fonts/proximanova-reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-img,
-video {
-  height: auto; }
+@font-face {
+  font-family: 'proxima_nova_ththin';
+  src: url("fonts/proxima_nova_thin-webfont.eot");
+  src: url("fonts/proxima_nova_thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_thin-webfont.woff2") format("woff2"), url("fonts/proxima_nova_thin-webfont.woff") format("woff"), url("fonts/proxima_nova_thin-webfont.ttf") format("truetype"), url("fonts/proxima_nova_thin-webfont.svg#proxima_nova_ththin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-input[type="radio"],
-input[type="checkbox"] {
-  cursor: pointer;
-  font-size: 110%;
-  position: relative;
-  margin-right: 3px;
-  padding: 0; }
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url("fonts/proxima_nova-semibold-webfont.woff2") format("woff2"), url("fonts/proxima_nova-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-input[type="search"] {
-  -webkit-appearance: textfield; }
+@font-face {
+  font-family: 'proxima_nova_blblack';
+  src: url("fonts/proximanova-black-webfont.woff2") format("woff2"), url("fonts/proximanova-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none; }
+.banner-wrap {
+  background: url("../img/fabc-banner-4.jpg");
+  background-size: cover;
+  height: calc( 75vh - 110px);
+  margin-top: 110px; }
+
+.welcome {
+  height: 25vh; }
+  .welcome span {
+    font-size: 1.5rem; }
+
+.intro {
+  padding-top: 3.5rem; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "proxima_nova_ltlight", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 24px;
   font-size: 16px;
-  color: #333; }
+  color: #555; }
 
 a {
   color: #255bbd;
@@ -431,10 +456,10 @@ a:hover {
   color: #f34248; }
 
 h1.title, h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "playfair_displaybold";
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  color: #000;
+  color: #004462;
   margin-bottom: 12px; }
 
 h1.title {
@@ -689,6 +714,7 @@ sub {
 *******************************/
 .container {
   background: #fff;
+  box-sizing: border-box;
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto; }
@@ -748,6 +774,7 @@ sub {
   padding-left: 0; }
 
 .column {
+  box-sizing: border-box;
   -ms-flex-grow: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1062,7 +1089,7 @@ input,
 select,
 textarea,
 fieldset {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "proxima_nova_ltlight", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px; }
 
 input[type="email"],
@@ -1264,7 +1291,7 @@ select.success {
     font-weight: normal;
     background-color: #eee;
     padding: 0 12px;
-    color: #555;
+    color: #777;
     font-size: 12px;
     line-height: 40px;
     white-space: nowrap; }
@@ -1283,7 +1310,7 @@ select.success {
 
 button,
 .button {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "proxima_nova_ltlight", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
   text-decoration: none;
