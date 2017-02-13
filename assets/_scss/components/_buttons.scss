@@ -2,20 +2,28 @@
 button,
 .button {
 	font-family: $font-family;
-	font-size: $ui-font-size;
+	font-size: $font-size-small;
 	font-weight: $button-font-weight;
 	text-decoration: none;
 	cursor: pointer;
 	display: inline-block;
-	line-height: 1.125rem;
-	min-height: $ui-height;
+	letter-spacing: 1px;
+	//line-height: 2.5rem;
+	//min-height: $ui-height;
+	min-width: 12rem; //192px
 	padding: $button-padding;
-	border: $button-outline-border-size solid transparent;
+	//border: $button-outline-border-size solid transparent;
 	vertical-align: middle;
 	-webkit-appearance: none;
-	color: #000;
-	background-color: $button-background-color;
-	border-radius: 4px;
+	color: rgba(255,255,255,.9);
+	color: $button-background-color;
+	//background-color: $button-background-color;
+	border-bottom: 2px solid $button-background-color;
+	border-top: 2px solid $button-background-color;
+	text-transform: uppercase;
+	text-align: center;
+	text-align: left;
+	@include transition(all .3s ease-in-out);
 }
 input.button {
 	height: auto;
@@ -23,9 +31,8 @@ input.button {
 button:hover,
 .button:hover {
     outline: none;
-	color: rgba(0, 0, 0, .6);
+	//color: rgba(255,255,255,.75);
 	text-decoration: none;
-	box-shadow: inset 0 0 0 40px rgba(0, 0, 0, .125);
 }
 
 .button:disabled,

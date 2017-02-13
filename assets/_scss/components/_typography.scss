@@ -1,9 +1,3 @@
-body {
-	font-family: $font-family;
-	line-height: $base-line;
-	font-size: $font-size-regular;
-	color: $body-text-color;
-}
 
 
 // Links
@@ -22,7 +16,8 @@ h1.title, h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 	color: $heading-text-color;
-	margin-bottom: $heading-margin-bottom;
+	margin-bottom: $heading-margin-bottom * 3;
+	margin-top: 0;
 }
 h1.title {
 	font-size: $title-font-size;
@@ -86,7 +81,9 @@ figure {
 	font-weight: 300;
 }
 
-
+b, strong {
+	color: $color-black;
+}
 // Lists
 ul, ol,
 ul ul,
@@ -114,7 +111,9 @@ dd {
 
 // Block
 p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
+	font-size: 1.25rem;
 	margin-bottom: $paragraph-margin-bottom;
+	line-height: 30px;
 }
 hr {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -209,4 +208,32 @@ sup {
 }
 sub {
 	bottom: -2px;
+}
+
+article {
+	
+	h2 {
+		position: relative;
+		
+		&:after {
+			background: $color-tertiary;
+			bottom: -3.35rem;
+			content: "";
+			height: 3px;
+			left: 0;
+			position: absolute;
+			width: 3rem;
+		}
+	}
+
+	&.article-wrap {
+
+		h2 {
+
+			&:after {
+				background: none;
+			}
+
+		}
+	}
 }

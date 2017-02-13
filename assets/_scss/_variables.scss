@@ -20,7 +20,7 @@ $grid-width: 1128 !default; // pixels
 $grid-gutter: $base-line !default;
 $grid-gutter-integer: ($grid-gutter / ($grid-gutter * 0 + 1)) !default;
 $grid-gap: ($grid-gutter-integer / ($grid-width / 100)) * 1% !default;
-
+$max-width: 110rem;
 // Z Indexes
 $z-over-content: 100 !default;
 $z-over-control: 200 !default;
@@ -70,14 +70,18 @@ $input-append-text-color: #777 !default;
 
 // Color States
 $color-default: #f4f4f4 !default;
-$color-primary: #3c74d9 !default;
+$color-primary: #390C06 !default;
+$color-secondary: #C44427 !default;
+$color-tertiary: #E28B2C !default; //orange
+$color-black: #141A1A !default;
+$color-gray: #4D5C5C !default;
 $color-success: #60ae4d !default;
 $color-error:   #f34248 !default;
 $color-warning: #fed443 !default;
 
 // Links
-$link-color: darken($color-primary, 10%) !default;
-$link-hover-color: $color-error !default;
+$link-color: #4D5C5C !default;
+$link-hover-color: darken(#4D5C5C, 10%) !default;
 
 
 // Background
@@ -117,12 +121,12 @@ $fieldset-border-color: rgba(0, 0, 0, .1) !default;
 $fieldset-border-size: 1px !default;
 
 // Button
-$button-background-color: #eee !default;
-$button-font-weight: normal !default;
+$button-background-color: #C44427 !default;
+$button-font-weight: 600 !default;
 $button-outline-font-weight: normal !default;
 $button-outline-border-size: 1px !default;
 $button-padding-small: 6px 20px !default;
-$button-padding: 10px 28px !default;
+$button-padding: 8px 4px !default;
 $button-padding-big: 14px 48px !default;
 
 // Height
