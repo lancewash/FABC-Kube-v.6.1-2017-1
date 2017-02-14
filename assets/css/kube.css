@@ -443,11 +443,10 @@ body::-webkit-scrollbar-track {
   background-color: white; }
 
 body::-webkit-scrollbar-thumb {
-  background: #99351f;
-  outline: 1px solid rgba(0, 0, 0, 0.75);
-  transition: all .5s ease-in-out; }
+  background: #af3d23;
+  outline: 1px solid rgba(0, 0, 0, 0.75); }
   body::-webkit-scrollbar-thumb:hover {
-    background: #6f2616; }
+    background: #99351f; }
 
 .event-block {
   height: auto;
@@ -512,7 +511,8 @@ section {
   background: #fff;
   bottom: 2.5rem;
   height: auto;
-  min-height: 300px;
+  max-height: 450px;
+  min-height: 360px;
   min-width: 380px;
   padding: 4rem 4rem 5rem 6rem;
   position: absolute;
@@ -541,11 +541,13 @@ section {
   margin-bottom: 3rem; }
 
 a {
-  color: #4D5C5C;
-  text-decoration: none; }
+  color: #C44427;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 a:hover {
-  color: #364040; }
+  color: #99351f; }
 
 h1.title, h1, h2, h3, h4, h5, h6 {
   font-family: "playfair_displaybold";
@@ -772,7 +774,7 @@ sub {
 article h2 {
   position: relative; }
   article h2:after {
-    background: #E28B2C;
+    background: #C44427;
     bottom: -3.35rem;
     content: "";
     height: 3px;
@@ -827,7 +829,7 @@ article.article-wrap h2:after {
 .container {
   background: #fff;
   box-sizing: border-box;
-  max-width: 110rem;
+  max-width: 120rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1443,13 +1445,13 @@ button,
   display: inline-block;
   letter-spacing: 1px;
   min-width: 12rem;
-  padding: 8px 4px;
+  padding: 5px;
   vertical-align: middle;
   -webkit-appearance: none;
   color: rgba(255, 255, 255, 0.9);
   color: #C44427;
-  border-bottom: 2px solid #C44427;
-  border-top: 2px solid #C44427;
+  border-bottom: 1px solid #C44427;
+  border-top: 1px solid #C44427;
   text-transform: uppercase;
   text-align: center;
   text-align: left;
@@ -2499,9 +2501,11 @@ button:hover .menu-icon {
   height: 257px;
   left: 25px;
   position: relative;
-  top: 15px;
+  top: 38px;
   width: 211px;
-  transition: all .5s ease-in-out; }
+  transition: all .25s ease-in-out; }
+  .cd-auto-hide-header .fabc-logo:hover {
+    top: 40px; }
 
 .cd-auto-hide-header .logo-small .fabc-logo {
   background: url("../img/fabc-logo-small.png") no-repeat;
@@ -2510,7 +2514,8 @@ button:hover .menu-icon {
   height: 80px;
   left: 0;
   margin: -15px 0 0 1px;
-  width: 260px; }
+  width: 260px;
+  top: 14px; }
 
 .cd-auto-hide-header.is-hidden .fabc-logo {
   background: url("../img/fabc-logo-small.png") no-repeat;
@@ -2534,7 +2539,7 @@ button:hover .menu-icon {
     height: 40px;
     left: auto;
     right: auto;
-    max-width: 110rem; } }
+    max-width: 120rem; } }
 
 .cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
@@ -2954,7 +2959,8 @@ section {
   background: #fff;
   bottom: 2.5rem;
   height: auto;
-  min-height: 300px;
+  max-height: 450px;
+  min-height: 360px;
   min-width: 380px;
   padding: 4rem 4rem 5rem 6rem;
   position: absolute;
