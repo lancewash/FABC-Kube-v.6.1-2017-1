@@ -4,8 +4,18 @@
   background: #fff;
   opacity: 0;
   transition: 1s, background-color 2s linear;
-
 }
+
+.event-block {
+  transition: all 1s;
+  opacity: 1;
+}
+
+.pastor {
+  opacity: 0;
+  transition: all 5s;
+}
+
 .scroll {
 
   .intro {
@@ -27,6 +37,15 @@
     //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#99361f', GradientType=0 );
     opacity: 1;
     padding: 3rem 0 8rem;
+  }
+  .event-block {
+    //min-width: 250px;
+    //opacity: 0;
+    //right: -40%;
+    //width: 0;
+  }
+  .pastor {
+    opacity: 1;
   }
 }
 
