@@ -486,24 +486,6 @@ section {
     opacity: 0;
     visibility: hidden; }
 
-.welcome-two {
-  height: 0;
-  height: 0;
-  opcacity: 0;
-  visibility: hidden;
-  transition: all 1s ease-in-out; }
-  .welcome-two.scroll-pos {
-    background: #004462;
-    height: auto;
-    opacity: 1;
-    padding: 5rem;
-    visibility: visible;
-    transition: all 1s ease-in-out; }
-    .welcome-two.scroll-pos h1 {
-      color: rgba(255, 255, 255, 0.75);
-      margin: 0;
-      transition: all 1s ease-in-out; }
-
 .intro {
   padding-top: 3.5rem; }
 
@@ -687,7 +669,7 @@ dd {
   margin-left: 24px; }
 
 p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 16px;
   line-height: 30px; }
 
@@ -2946,24 +2928,6 @@ section {
     opacity: 0;
     visibility: hidden; }
 
-.welcome-two {
-  height: 0;
-  height: 0;
-  opcacity: 0;
-  visibility: hidden;
-  transition: all 1s ease-in-out; }
-  .welcome-two.scroll-pos {
-    background: #004462;
-    height: auto;
-    opacity: 1;
-    padding: 5rem;
-    visibility: visible;
-    transition: all 1s ease-in-out; }
-    .welcome-two.scroll-pos h1 {
-      color: rgba(255, 255, 255, 0.75);
-      margin: 0;
-      transition: all 1s ease-in-out; }
-
 .intro {
   padding-top: 3.5rem; }
 
@@ -3009,3 +2973,31 @@ section {
 
 .pastor-img {
   margin-bottom: 3rem; }
+
+.intro {
+  background: #fff;
+  opacity: 0;
+  transition: 1s, background-color 2s linear; }
+
+.scroll .intro {
+  background: white;
+  opacity: 1;
+  padding: 3rem 0 8rem; }
+
+.welcome-two {
+  height: 0;
+  height: 0;
+  opcacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out; }
+  .welcome-two.scroll-pos {
+    background: #004462;
+    height: auto;
+    opacity: 1;
+    padding: 5rem;
+    visibility: visible;
+    transition: all 1s ease-in-out; }
+    .welcome-two.scroll-pos h1 {
+      color: rgba(255, 255, 255, 0.75);
+      margin: 0;
+      transition: all 1s ease-in-out; }

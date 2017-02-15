@@ -48,28 +48,7 @@ section {
   }
 }
 
-.welcome-two {
-  height: 0;
-  height: 0;
-  opcacity: 0;
-  visibility: hidden;
-  transition: all 1s ease-in-out;
-  
-  &.scroll-pos {
-    background: #004462;
-    height: auto;
-    opacity: 1;
-    padding: 5rem;
-    visibility: visible;
-    transition: all 1s ease-in-out;
 
-    h1 {
-      color: rgba(255,255,255,.75);
-      margin: 0;
-      transition: all 1s ease-in-out;
-    }
-  }
-}
 
 .intro {
   padding-top: 3.5rem;
