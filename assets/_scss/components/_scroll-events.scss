@@ -18,6 +18,10 @@
 
 .scroll {
 
+  .banner-wrap {
+    width: 100% !important;
+  }
+
   .intro {
     //background: #99351f;
     background: rgba(255,255,255,1);
@@ -41,7 +45,7 @@
   .event-block {
     //min-width: 250px;
     //opacity: 0;
-    //right: -40%;
+    right: -48%;
     //width: 0;
   }
   .pastor {

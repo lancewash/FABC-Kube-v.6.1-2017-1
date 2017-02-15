@@ -2135,6 +2135,9 @@ h6 .label {
   .modal-body {
     padding: 24px; } }
 
+html {
+  overflow-x: hidden; }
+
 .group:after {
   content: "";
   display: table;
@@ -2987,10 +2990,16 @@ section {
   opacity: 0;
   transition: all 5s; }
 
+.scroll .banner-wrap {
+  width: 100% !important; }
+
 .scroll .intro {
   background: white;
   opacity: 1;
   padding: 3rem 0 8rem; }
+
+.scroll .event-block {
+  right: -48%; }
 
 .scroll .pastor {
   opacity: 1; }
