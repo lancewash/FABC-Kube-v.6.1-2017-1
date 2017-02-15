@@ -20,8 +20,10 @@ button,
 	//background-color: $button-background-color;
 	//border-bottom: 1px solid rgba(0,0,0,.2);
 	//border-top: 1px solid rgba(0,0,0,.2);
-	border-bottom: 1px solid $color-tertiary;
-	border-top: 1px solid $color-tertiary;
+	border-bottom: 1px solid lighten($color-tertiary, 40%);
+	border-top: 1px solid lighten($color-tertiary, 40%);
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	border-top: 1px solid rgba(0,0,0,.15);
 	text-transform: uppercase;
 	text-align: center;
 	text-align: left;

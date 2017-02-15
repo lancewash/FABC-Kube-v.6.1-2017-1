@@ -513,22 +513,32 @@ section {
   height: auto;
   max-height: 450px;
   min-height: 360px;
-  min-width: 380px;
-  padding: 4rem 4rem 5rem 6rem;
+  min-width: 400px;
+  padding: 4rem 4rem 5rem 5rem;
   position: absolute;
   right: -25%;
   top: 2.75rem;
-  width: 35%;
+  width: 40%;
   z-index: 0; }
   .event-block h2 {
+    font-size: 2.5rem;
     margin-top: 0;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem;
+    position: relative; }
+    .event-block h2:after {
+      background: #C44427 !important;
+      bottom: -1.5rem;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 3rem; }
   .event-block li {
     margin-bottom: 1rem; }
     .event-block li a {
       display: inline-block;
       font-family: "playfair_displaybold";
-      font-size: 1.15rem; }
+      font-size: 1.5rem; }
     .event-block li span {
       display: block;
       font-size: 14px; }
@@ -829,7 +839,7 @@ article.article-wrap h2:after {
 .container {
   background: #fff;
   box-sizing: border-box;
-  max-width: 120rem;
+  max-width: 132rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1445,13 +1455,15 @@ button,
   display: inline-block;
   letter-spacing: 1px;
   min-width: 12rem;
-  padding: 5px;
+  padding: 10px 5px;
   vertical-align: middle;
   -webkit-appearance: none;
   color: rgba(255, 255, 255, 0.9);
   color: #C44427;
-  border-bottom: 1px solid #C44427;
-  border-top: 1px solid #C44427;
+  border-bottom: 1px solid #f3cdc4;
+  border-top: 1px solid #f3cdc4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   text-align: center;
   text-align: left;
@@ -2539,7 +2551,7 @@ button:hover .menu-icon {
     height: 40px;
     left: auto;
     right: auto;
-    max-width: 120rem; } }
+    max-width: 132rem; } }
 
 .cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
@@ -2961,22 +2973,32 @@ section {
   height: auto;
   max-height: 450px;
   min-height: 360px;
-  min-width: 380px;
-  padding: 4rem 4rem 5rem 6rem;
+  min-width: 400px;
+  padding: 4rem 4rem 5rem 5rem;
   position: absolute;
   right: -25%;
   top: 2.75rem;
-  width: 35%;
+  width: 40%;
   z-index: 0; }
   .event-block h2 {
+    font-size: 2.5rem;
     margin-top: 0;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem;
+    position: relative; }
+    .event-block h2:after {
+      background: #C44427 !important;
+      bottom: -1.5rem;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 3rem; }
   .event-block li {
     margin-bottom: 1rem; }
     .event-block li a {
       display: inline-block;
       font-family: "playfair_displaybold";
-      font-size: 1.15rem; }
+      font-size: 1.5rem; }
     .event-block li span {
       display: block;
       font-size: 14px; }

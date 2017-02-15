@@ -20,7 +20,7 @@ $grid-width: 1128 !default; // pixels
 $grid-gutter: $base-line !default;
 $grid-gutter-integer: ($grid-gutter / ($grid-gutter * 0 + 1)) !default;
 $grid-gap: ($grid-gutter-integer / ($grid-width / 100)) * 1% !default;
-$max-width: 120rem;
+$max-width: 132rem;
 // Z Indexes
 $z-over-content: 100 !default;
 $z-over-control: 200 !default;
@@ -126,7 +126,7 @@ $button-font-weight: 600 !default;
 $button-outline-font-weight: normal !default;
 $button-outline-border-size: 1px !default;
 $button-padding-small: 6px 20px !default;
-$button-padding: 5px !default;
+$button-padding: 10px 5px !default;
 $button-padding-big: 14px 48px !default;
 
 // Height

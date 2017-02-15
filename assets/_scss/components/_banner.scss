@@ -81,18 +81,30 @@ section {
   height: auto;
   max-height: 450px;
   min-height: 360px;
-  min-width: 380px;
-  padding: 4rem 4rem 5rem 6rem;
+  min-width: 400px;
+  padding: 4rem 4rem 5rem 5rem;
   position: absolute;
   //right: 2rem;
   right: -25%;
   top: 2.75rem;
-  width: 35%;
+  width: 40%;
   z-index: 0;
 
   h2 {
+    font-size: 2.5rem;
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &:after {
+      background: $color-tertiary !important;
+      bottom: -1.5rem;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 3rem;
+    }
   }
 
   li {
@@ -101,7 +113,7 @@ section {
     a {
       display: inline-block;
       font-family: $heading-font-family;
-      font-size: 1.15rem;
+      font-size: 1.5rem;
     }
     
     span {
